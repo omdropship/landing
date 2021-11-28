@@ -7,6 +7,20 @@
   max-width: 100%;
   height: auto;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
 </style>
 </head>
 <body>
@@ -16,6 +30,13 @@
 
 <p>If you want an image to scale down if it has to, but never scale up to be larger than its original size, use max-width: 100%.</p>
 <p>Resize the browser window to see the effect.</p>
+<div class="card">
+   <img src="img/1.jpg" alt="Nature" class="responsive" width="600" height="400">
+ <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
 
 <img src="img/1.jpg" alt="Nature" class="responsive" width="600" height="400">
 </br>
