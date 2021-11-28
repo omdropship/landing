@@ -1,356 +1,71 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>My App</title>
+  <link rel="stylesheet" href="https://framework7.io/packages/core/framework7-bundle.min.css">
+  <link rel="stylesheet" href="https://framework7.io/css/framework7-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id="app"></div>
+    
+    <script src="https://framework7.io/packages/core/framework7-bundle.min.js">
+  </script><script src="cards.js"></script>
+  <style>
+  .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: left;
-  font-family: arial;
+  .demo-card-header-pic .card-content-padding .date {
+    color: #8e8e93;
+  }
 
-}
+  .demo-facebook-card .card-header {
+    display: block;
+    padding: 10px;
+  }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  .demo-facebook-card .demo-facebook-avatar {
+    float: left;
+  }
 
-.container {
-  padding: 2px 16px;
+  .demo-facebook-card .demo-facebook-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
+  .demo-facebook-card .demo-facebook-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+  }
 
+  .demo-facebook-card .card-footer {
+    background: #fafafa;
+  }
 
+  .demo-facebook-card .card-footer a {
+    color: #81848b;
+    font-weight: 500;
+  }
+
+  .demo-facebook-card .card-content img {
+    display: block;
+  }
+
+  .demo-facebook-card .card-content-padding {
+    padding: 15px 10px;
+  }
+
+  .demo-facebook-card .card-content-padding .likes {
+    color: #8e8e93;
+  }
 </style>
-</head>
-<body>
-<div class="phdr"><h1 style="font-si&nbsp; &nbsp; &nbsp; ze:2vw">Amanda shoes</h1></div>
-
-<h2>Responsive Images</h2>
-
-<p>If you want an image to scale down if it has to, but never scale up to be larger than its original size, use max-width: 100%.</p>
-<p>Resize the browser window to see the effect.</p>
-<div class="card">
-<div class="phdr">Sepatu yezy warna hitam</div>
-  
-   <img src="img/1.jpg" alt="Nature" class="responsive" width="600" height="400">
- <p> <b>Model sepatu</b>:Sepatu yezy warna hitam<br/></p>
-  <p>  <b>Harga</b>: Rp 65.000</br></p> 
-  <p>  <b>Ukuran size</b>: 38-44<br/><p> 
-  <p>  <b>Stik tersedia</b>:105 <p> 
-<p>  <center><b>Chat WhatsApp</b>:105 </center><p> 
-  </div>
-</div>
-<br/>
-<img src="img/1.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/2.jpg" alt="Nature" class="responsive" width="600" height="400">
-
-</br>
-<img src="img/3.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/4.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/5.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/6.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/7.jpg" alt="Nature" class="responsive" width="600" height="400">
-</br>
-<img src="img/8.jpg" alt="Nature" class="responsive" width="600" height="400">
-
-<style>
-  Total Lines: 274
-/*achos.co.tv facebook style*/
-a:link, a:visited {
-color : #3b5998;
-text-decoration : none;
-}
-a:focus, a:hover {
-color : #fff;
-background-color : #ffffff;
-}
-input3 {
-background : #ffffff;
-border : 1px solid #3b5998;
-padding : 1px;
-margin : 1px 1px 1px 2px;
-color : #3b5998;
-}
-input3:hover {
-background : #3b5998;
-border : 1px solid #ffffff;
-border-left : 1px solid #ffffff;
-padding : 1px;
-margin : 1px 1px 1px 2px;
-color : #3b5998;
-}
-textarea3:hover {
-color : #ff0000;
-background : #ffffff;
-border : 1px solid #a1c478;
-padding : 1px;
-margin : 1px 1px 1px 2px;
-}
-select {
-background : #3b5998;
-border : 1px solid #3b5998;
-padding : 1px;
-margin : 1px 1px 1px 3px;
-color : #ffffff;
-}
-select:hover {
-background : #325998;
-border : 1px solid #3b5998;
-border-left : 1px solid #bfbfbe;
-padding : 1px;
-margin : 1px 1px 1px 3px;
-color : #ffffff;
-}
-button {
-background-color : #3b5998;
-color : #fff;
-}
-body {
-/*background-color: #f9fcff;
-color : #425b89;*/
-font-size : 11px;
-font-family : Tahoma;
-margin : 0;
-padding : 0;
-/*border : 1px solid #e1e1e1;*/
-margin: auto; max-width: 650px;
-}
-form {
-font-size : small;
-margin : 0;
-padding : 0;
-}
-h3 {
-margin : 0;
-padding : 0;
-padding-bottom : 2px;
-}
-hr {
-margin-top : 2px;
-margin-bottom : 2px;
-border-top : 1px solid #e3e3e3;
-border-right-style : none;
-border-right-width : 0;
-border-bottom-style : none;
-border-bottom-width : 0;
-border-left-style : none;
-border-left-width : 0;
-}
-p {
-margin-top : 6px;
-margin-bottom : 6px;
-}
-ul {
-margin : 0;
-padding-left : 20px;
-}
-.bmenu, .phdr, .hdr {
-color : #ffffff;
-background-color : #3b5998;
-background-repeat : repeat-x;
-background-position : 100% top;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #E0E6FF;
-}
-.bmenu a, .phdr a, .hdr a {
-color : #fff;
-border-bottom : 1px dotted
-#243E60;
-}
-.bmenu a:hover, .phdr
-a:hover, .hdr a:hover {
-color : #dbfaff;
-border-bottom : 1px dotted
-#243E60;
-}
-.clip {
-color : #459bb1;
-border : 1px solid #dfdfdf;
-font-size : x-small;
-background-color : #f8f8f8;
-padding : 4px 4px 8px;
-}
-.end {
-text-align : center;
-}
-.func {
-border-left : 4px solid #425b89;
-color : #425b89;
-font-size : x-small;
-margin-top : 4px;
-margin-left : 2px;
-padding-left : 4px;
-}
-.gmenu {
-color : #75bf00;
-background-color : #fafff0;
-background-repeat : repeat-x;
-background-position : 50% top;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #d4eba1;
-}
-.gmenu a {
-color : #6db900;
-border-bottom : 1px dotted
-#cfe798;
-}
-.gmenu a:hover {
-color : #92e31d;
-border-bottom : 1px dotted
-#e3f0c5;
-}
-.gray {
-color : #979797;
-}
-.green {
-color : #66bd00;
-}
-.logo {
-background: #E0E6FF;
-background-repeat : repeat-x;
-background-position : 50% top;
-text-align : center;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-}
-.header, .footer {
-color : #ffffff;
-background-color : #425b89;
-background-repeat : repeat-x;
-background-position : 50% top;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #abbefb;
-}
-.footer a {
-color : #f2f2f2;
-text-decoration : none;
-border-bottom : 1px dotted
-#243E60;
-}
-.footer a:hover {
-color : #d2d2d2;
-text-decoration : none;
-border-bottom : 1px dotted
-#243E60;
-}
-.left {
-float : left;
-}
-.list1, .b {
-background-color : #FFFFE0;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #abbefb;
-}
-.list2, .c {
-background-color : #E3EFFF;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #abbefb;
-}
-.maintxt {
-padding-right : 1px;
-padding-left : 1px;
-border : 1px solid #E0E6FF;
-}
-.menu, .news {
-padding: 2px;
-margin: 1px;
-background-color: #E0E6FF;
-}
-.phpcode {
-color : #5f8086;
-background-color : #f1f7f8;
-border : 1px dotted;
-margin-top : 4px;
-padding : 0 2px;
-}
-.quote {
-border-left : 4px solid #c1c1c1;
-color : #878787;
-font-size : x-small;
-padding : 2px 0 2px 4px;
-margin-left : 2px;
-}
-.red, .red a:link, .red a:visited {
-color : #ff0a00;
-}
-.reply {
-border-left : 4px solid #ff2600;
-color : #f42400;
-padding : 2px 0 2px 4px;
-}
-.rmenu, .alarm {
-color : #fd4646;
-background-color : #fff0f0;
-background-image : url(/img/
-rmenu.gif);
-background-repeat : repeat-x;
-background-position : 50% top;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border : 1px solid #ffd0d0;
-}
-.status {
-color : #3fa400;
-font-weight : bold;
-font-size : x-small;
-padding-left : 0;
-}
-.sub {
-border-top : 1px dotted #cacaca;
-font-size : x-small;
-margin-top : 4px;
-}
-.sub a:link, .sub a:visited {
-text-decoration : none;
-}
-.tmn, .fmenu {
-color : #243E60;
-background-color : #f1f1f1;
-background-repeat : repeat-x;
-background-position : 50%
-bottom;
-margin-top : 1px;
-margin-bottom : 1px;
-padding : 2px;
-border-top : 1px solid #e1e1e1;
-border-bottom : 1px solid
-#e1e1e1;
-}
-.tmn a:link, .tmn a:visited {
-color : #243E60;
-text-decoration : none;
-border-bottom : 1px dotted
-#e7e7e7;
-}
-.tmn a:hover {
-color : #ff5a00;
-border-bottom : 1px dotted
-#d2d2d2;
-}
-
-
-</style>
-</body>
-</html>
+  </body></html>
